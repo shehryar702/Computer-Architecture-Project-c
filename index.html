@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addressing Modes Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Addressing Modes Explorer</h1>
+        <p>Computer Architecture Lab - G17</p>
+        <p>Muhammad Shehryar Khan | Arif Hussain</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Memory Table</h2>
+            <p>Our memory contains 16 addresses.</p>
+
+            <div class="memory-grid">
+                <div>Address 0 <b>10</b></div>
+                <div>Address 1 <b>20</b></div>
+                <div>Address 2 <b>30</b></div>
+                <div>Address 3 <b>45</b></div>
+                <div>Address 4 <b>50</b></div>
+                <div>Address 5 <b>8</b></div>
+                <div>Address 6 <b>70</b></div>
+                <div>Address 7 <b>80</b></div>
+                <div>Address 8 <b>90</b></div>
+                <div>Address 9 <b>100</b></div>
+                <div>Address 10 <b>110</b></div>
+                <div>Address 11 <b>120</b></div>
+                <div>Address 12 <b>130</b></div>
+                <div>Address 13 <b>140</b></div>
+                <div>Address 14 <b>150</b></div>
+                <div>Address 15 <b>160</b></div>
+            </div>
+        </section>
+
+        
+<section class="card">
+    <h2>Select Addressing Mode</h2>
+
+    <div class="mode-buttons">
+        <button class="mode-btn" data-mode="immediate">
+            Immediate
+        </button>
+
+        <button class="mode-btn" data-mode="direct">
+            Direct
+        </button>
+
+        <button class="mode-btn" data-mode="indirect">
+            Indirect
+        </button>
+
+        <button class="mode-btn" data-mode="register">
+            Register
+        </button>
+    </div>
+
+    <label for="userValue">Enter Value or Address:</label>
+
+    <input type="text" id="userValue"
+           placeholder="Example: 25, 3 or R1">
+
+    <button id="calculateBtn" class="calculate">
+        Calculate Operand
+    </button>
+</section>
+
+<section class="card">
+    <h2>Result Area</h2>
+
+    <p>Selected Mode: <span id="selectedMode">None</span></p>
+
+    <p>Final Operand: <span id="finalAnswer">Waiting for input</span></p>
+
+    <h3>Calculation Steps</h3>
+    <p id="steps">Select a mode to begin.</p>
+</section>
+    </main>
+
+    <footer>
+        <p>Addressing Modes Explorer - G17</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

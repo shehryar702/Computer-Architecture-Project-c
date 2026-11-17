@@ -1,0 +1,131 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #222;
+}
+
+header {
+    background: #183b66;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 5px;
+}
+
+main {
+    width: 90%;
+    max-width: 950px;
+    margin: 25px auto;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #00000015;
+}
+
+h2 {
+    color: #183b66;
+    margin-top: 0;
+}
+
+.memory-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.memory-grid div {
+    background: #e5edf7;
+    padding: 13px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.memory-grid b {
+    display: block;
+    margin-top: 6px;
+    color: #183b66;
+}
+
+.mode-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #2563a6;
+    color: white;
+    border: none;
+    padding: 11px 17px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #183b66;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.calculate {
+    background: #16834a;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #555;
+}
+
+@media (max-width: 600px) {
+    .memory-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.mode-btn.active {
+    background: #16834a;
+    outline: 3px solid #a7e8c2;
+}
+
+#finalAnswer {
+    color: #16834a;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#steps {
+    background: #e5edf7;
+    padding: 12px;
+    border-radius: 6px;
+    line-height: 1.6;
+}
